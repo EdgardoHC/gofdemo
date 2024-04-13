@@ -35,8 +35,8 @@
 };
 
 // Uso del Singleton
-var singletonInstance1 = Singleton();
-var singletonInstance2 = Singleton();
+var singletonInstance1 = SingletonForm.getInstance();
+var singletonInstance2 = SingletonForm.getInstance();
 
-console.log(singletonInstance1 === singletonInstance2); // false, se crean dos instancias diferentes del Singleton
+console.log(singletonInstance1 === singletonInstance2);
 console.log(Singleton());
